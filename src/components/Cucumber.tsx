@@ -9,8 +9,10 @@ export function Cucumber() {
     window.addEventListener("keydown", (e) => {
       if (e.keyCode === 37) {
         setPosition(position => position - 100)
+        console.log(position)
       } else if (e.keyCode === 39) {
         setPosition(position => position + 100)
+        console.log(position)
       }
     })
   }, [])
